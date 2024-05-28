@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		027A29C42B56A1A77E95CE87 /* Pods_aipainapp_aipainappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D912E9B7F08B5E6B92F04BE9 /* Pods_aipainapp_aipainappUITests.framework */; };
+		C595AED715B0B875D8B58E70 /* Pods_aipainappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F25F999A15EDD35A0DEFB /* Pods_aipainappTests.framework */; };
+		C65E70902EB9BC8FE2DB9C2C /* Pods_aipainapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457F620D4FF418C7A759E1B /* Pods_aipainapp.framework */; };
+		E731E8372C0353DD002A0C44 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731E8362C0353DD002A0C44 /* Colors.swift */; };
+		E731E8392C04ACA3002A0C44 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731E8382C04ACA2002A0C44 /* RegisterScreen.swift */; };
+		E731E8402C04ADD9002A0C44 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731E83F2C04ADD9002A0C44 /* LoginScreen.swift */; };
 		E74AAE062C034179005A18D6 /* aipainappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74AAE052C034179005A18D6 /* aipainappApp.swift */; };
 		E74AAE082C034179005A18D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74AAE072C034179005A18D6 /* ContentView.swift */; };
 		E74AAE0A2C03417A005A18D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E74AAE092C03417A005A18D6 /* Assets.xcassets */; };
@@ -14,6 +20,10 @@
 		E74AAE172C03417A005A18D6 /* aipainappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74AAE162C03417A005A18D6 /* aipainappTests.swift */; };
 		E74AAE212C03417A005A18D6 /* aipainappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74AAE202C03417A005A18D6 /* aipainappUITests.swift */; };
 		E74AAE232C03417A005A18D6 /* aipainappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74AAE222C03417A005A18D6 /* aipainappUITestsLaunchTests.swift */; };
+		E760EFA32C063B7400907066 /* GoogleLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760EFA22C063B7400907066 /* GoogleLoginViewModel.swift */; };
+		E760EFA52C063B8400907066 /* FacebookLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760EFA42C063B8400907066 /* FacebookLoginViewModel.swift */; };
+		E760EFA72C063C2800907066 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760EFA62C063C2800907066 /* RegisterViewModel.swift */; };
+		E760EFB02C0655C500907066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760EFAF2C0655C500907066 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0457F620D4FF418C7A759E1B /* Pods_aipainapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aipainapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		164DAD3A77A13428239F9352 /* Pods-aipainapp-aipainappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aipainapp-aipainappUITests.debug.xcconfig"; path = "Target Support Files/Pods-aipainapp-aipainappUITests/Pods-aipainapp-aipainappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A9A9D55FE7C257CFCED243D /* Pods-aipainappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aipainappTests.debug.xcconfig"; path = "Target Support Files/Pods-aipainappTests/Pods-aipainappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		614BACBC348990C2EAFB7387 /* Pods-aipainappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aipainappTests.release.xcconfig"; path = "Target Support Files/Pods-aipainappTests/Pods-aipainappTests.release.xcconfig"; sourceTree = "<group>"; };
+		6D130D58B7354C04169B0672 /* Pods-aipainapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aipainapp.debug.xcconfig"; path = "Target Support Files/Pods-aipainapp/Pods-aipainapp.debug.xcconfig"; sourceTree = "<group>"; };
+		7639B158DD0960B5CFFCDCA9 /* Pods-aipainapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aipainapp.release.xcconfig"; path = "Target Support Files/Pods-aipainapp/Pods-aipainapp.release.xcconfig"; sourceTree = "<group>"; };
+		B73F25F999A15EDD35A0DEFB /* Pods_aipainappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aipainappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9B6B7ADC3BC77FFE31AB3E /* Pods-aipainapp-aipainappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aipainapp-aipainappUITests.release.xcconfig"; path = "Target Support Files/Pods-aipainapp-aipainappUITests/Pods-aipainapp-aipainappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D912E9B7F08B5E6B92F04BE9 /* Pods_aipainapp_aipainappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aipainapp_aipainappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E731E8362C0353DD002A0C44 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E731E8382C04ACA2002A0C44 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		E731E83F2C04ADD9002A0C44 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E74AAE022C034179005A18D6 /* aipainapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aipainapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74AAE052C034179005A18D6 /* aipainappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aipainappApp.swift; sourceTree = "<group>"; };
 		E74AAE072C034179005A18D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +66,11 @@
 		E74AAE1C2C03417A005A18D6 /* aipainappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aipainappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74AAE202C03417A005A18D6 /* aipainappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aipainappUITests.swift; sourceTree = "<group>"; };
 		E74AAE222C03417A005A18D6 /* aipainappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aipainappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E760EFA22C063B7400907066 /* GoogleLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginViewModel.swift; sourceTree = "<group>"; };
+		E760EFA42C063B8400907066 /* FacebookLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewModel.swift; sourceTree = "<group>"; };
+		E760EFA62C063C2800907066 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		E760EFAC2C0654C100907066 /* aipainapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = aipainapp.entitlements; sourceTree = "<group>"; };
+		E760EFAF2C0655C500907066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65E70902EB9BC8FE2DB9C2C /* Pods_aipainapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C595AED715B0B875D8B58E70 /* Pods_aipainappTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +94,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027A29C42B56A1A77E95CE87 /* Pods_aipainapp_aipainappUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41EE751036CD2BEB8D5B8E25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0457F620D4FF418C7A759E1B /* Pods_aipainapp.framework */,
+				D912E9B7F08B5E6B92F04BE9 /* Pods_aipainapp_aipainappUITests.framework */,
+				B73F25F999A15EDD35A0DEFB /* Pods_aipainappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCD736B00F0546FF322D1BFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D130D58B7354C04169B0672 /* Pods-aipainapp.debug.xcconfig */,
+				7639B158DD0960B5CFFCDCA9 /* Pods-aipainapp.release.xcconfig */,
+				164DAD3A77A13428239F9352 /* Pods-aipainapp-aipainappUITests.debug.xcconfig */,
+				CA9B6B7ADC3BC77FFE31AB3E /* Pods-aipainapp-aipainappUITests.release.xcconfig */,
+				3A9A9D55FE7C257CFCED243D /* Pods-aipainappTests.debug.xcconfig */,
+				614BACBC348990C2EAFB7387 /* Pods-aipainappTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E731E8352C0353BF002A0C44 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E731E8362C0353DD002A0C44 /* Colors.swift */,
+				E731E8382C04ACA2002A0C44 /* RegisterScreen.swift */,
+				E731E83F2C04ADD9002A0C44 /* LoginScreen.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E731E83A2C04ACF8002A0C44 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				E760EFA22C063B7400907066 /* GoogleLoginViewModel.swift */,
+				E760EFA42C063B8400907066 /* FacebookLoginViewModel.swift */,
+				E760EFA62C063C2800907066 /* RegisterViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 		E74AADF92C034178005A18D6 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +151,8 @@
 				E74AAE152C03417A005A18D6 /* aipainappTests */,
 				E74AAE1F2C03417A005A18D6 /* aipainappUITests */,
 				E74AAE032C034179005A18D6 /* Products */,
+				CCD736B00F0546FF322D1BFD /* Pods */,
+				41EE751036CD2BEB8D5B8E25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +169,7 @@
 		E74AAE042C034179005A18D6 /* aipainapp */ = {
 			isa = PBXGroup;
 			children = (
+				E760EFAC2C0654C100907066 /* aipainapp.entitlements */,
 				E74AAE342C034386005A18D6 /* Util */,
 				E74AAE332C034380005A18D6 /* Presentation */,
 				E74AAE322C034379005A18D6 /* DI */,
@@ -133,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				E74AAE052C034179005A18D6 /* aipainappApp.swift */,
+				E760EFAF2C0655C500907066 /* AppDelegate.swift */,
 				E74AAE072C034179005A18D6 /* ContentView.swift */,
 				E74AAE092C03417A005A18D6 /* Assets.xcassets */,
 				E74AAE0B2C03417A005A18D6 /* Preview Content */,
@@ -164,6 +241,8 @@
 		E74AAE332C034380005A18D6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E731E83A2C04ACF8002A0C44 /* viewmodel */,
+				E731E8352C0353BF002A0C44 /* view */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -182,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E74AAE262C03417A005A18D6 /* Build configuration list for PBXNativeTarget "aipainapp" */;
 			buildPhases = (
+				5A5EC28B5877EED42E87C2A3 /* [CP] Check Pods Manifest.lock */,
 				E74AADFE2C034179005A18D6 /* Sources */,
 				E74AADFF2C034179005A18D6 /* Frameworks */,
 				E74AAE002C034179005A18D6 /* Resources */,
+				AA83031518780A306D2C117E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +280,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E74AAE292C03417A005A18D6 /* Build configuration list for PBXNativeTarget "aipainappTests" */;
 			buildPhases = (
+				6AF6A9A1AED02204F19E6D7C /* [CP] Check Pods Manifest.lock */,
 				E74AAE0E2C03417A005A18D6 /* Sources */,
 				E74AAE0F2C03417A005A18D6 /* Frameworks */,
 				E74AAE102C03417A005A18D6 /* Resources */,
@@ -217,9 +299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E74AAE2C2C03417A005A18D6 /* Build configuration list for PBXNativeTarget "aipainappUITests" */;
 			buildPhases = (
+				CD809B596DAF8E22277F4B85 /* [CP] Check Pods Manifest.lock */,
 				E74AAE182C03417A005A18D6 /* Sources */,
 				E74AAE192C03417A005A18D6 /* Frameworks */,
 				E74AAE1A2C03417A005A18D6 /* Resources */,
+				2CEA7DDCBC1F15A51E27B867 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +347,9 @@
 				Base,
 			);
 			mainGroup = E74AADF92C034178005A18D6;
+			packageReferences = (
+				E760EFA82C06478600907066 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			productRefGroup = E74AAE032C034179005A18D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,13 +387,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CEA7DDCBC1F15A51E27B867 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aipainapp-aipainappUITests/Pods-aipainapp-aipainappUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aipainapp-aipainappUITests/Pods-aipainapp-aipainappUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aipainapp-aipainappUITests/Pods-aipainapp-aipainappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A5EC28B5877EED42E87C2A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aipainapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AF6A9A1AED02204F19E6D7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aipainappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA83031518780A306D2C117E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aipainapp/Pods-aipainapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aipainapp/Pods-aipainapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aipainapp/Pods-aipainapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD809B596DAF8E22277F4B85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aipainapp-aipainappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E74AADFE2C034179005A18D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E760EFA52C063B8400907066 /* FacebookLoginViewModel.swift in Sources */,
+				E731E8392C04ACA3002A0C44 /* RegisterScreen.swift in Sources */,
 				E74AAE082C034179005A18D6 /* ContentView.swift in Sources */,
+				E760EFB02C0655C500907066 /* AppDelegate.swift in Sources */,
+				E760EFA72C063C2800907066 /* RegisterViewModel.swift in Sources */,
+				E731E8402C04ADD9002A0C44 /* LoginScreen.swift in Sources */,
+				E731E8372C0353DD002A0C44 /* Colors.swift in Sources */,
 				E74AAE062C034179005A18D6 /* aipainappApp.swift in Sources */,
+				E760EFA32C063B7400907066 /* GoogleLoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +577,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -443,7 +640,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -464,14 +661,18 @@
 		};
 		E74AAE272C03417A005A18D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D130D58B7354C04169B0672 /* Pods-aipainapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = aipainapp/aipainapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"aipainapp/App/Preview Content\"";
+				DEVELOPMENT_TEAM = 73A6U57YR3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = aipainapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -492,14 +693,18 @@
 		};
 		E74AAE282C03417A005A18D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7639B158DD0960B5CFFCDCA9 /* Pods-aipainapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = aipainapp/aipainapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"aipainapp/App/Preview Content\"";
+				DEVELOPMENT_TEAM = 73A6U57YR3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = aipainapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -520,6 +725,7 @@
 		};
 		E74AAE2A2C03417A005A18D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A9A9D55FE7C257CFCED243D /* Pods-aipainappTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -539,6 +745,7 @@
 		};
 		E74AAE2B2C03417A005A18D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614BACBC348990C2EAFB7387 /* Pods-aipainappTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -558,6 +765,7 @@
 		};
 		E74AAE2D2C03417A005A18D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164DAD3A77A13428239F9352 /* Pods-aipainapp-aipainappUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,6 +783,7 @@
 		};
 		E74AAE2E2C03417A005A18D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA9B6B7ADC3BC77FFE31AB3E /* Pods-aipainapp-aipainappUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -630,6 +839,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E760EFA82C06478600907066 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = E74AADFA2C034178005A18D6 /* Project object */;
 }
