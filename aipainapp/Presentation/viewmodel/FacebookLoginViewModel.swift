@@ -6,18 +6,26 @@ class FacebookLoginViewModel: ObservableObject {
     @Published var userName: String? = nil
     @Published var userID: String? = nil
     @Published var userEmail: String? = nil
+    @Published var loginError: String? = nil
 
     private let loginManager = LoginManager()
+    
+    private let facebookLoginRepository: FacebookLoginRepository
+
+    init(facebookLoginRepository: FacebookLoginRepository) {
+        self.facebookLoginRepository = facebookLoginRepository
+    }
+    
 
     func handleLogin() {
         loginManager.logIn(permissions: ["public_profile", "email"], from: nil) { result, error in
             if let error = error {
-                print("Failed to login: \(error.localizedDescription)")
+                self.loginError = "Failed to login: \(error.localizedDescription)"
                 return
             }
 
             guard let result = result, !result.isCancelled else {
-                print("User cancelled login.")
+                self.loginError = "User cancelled login."
                 return
             }
 
@@ -28,30 +36,37 @@ class FacebookLoginViewModel: ObservableObject {
     }
 
     func handleLoginResult(_ accessToken: String) {
-        // Handle Facebook login result
         fetchUserProfile()
     }
 
     func fetchUserProfile() {
         GraphRequest(graphPath: "me", parameters: ["fields": "id, name, email"]).start { _, result, error in
             if let error = error {
-                print("Failed to fetch user profile: \(error.localizedDescription)")
+                self.loginError = "Failed to fetch user profile: \(error.localizedDescription)"
                 return
             }
 
             if let result = result as? [String: Any],
-               let id = result["id"] as? String,
-               let name = result["name"] as? String,
+               let social_id = result["id"] as? String,
+               let fullname = result["name"] as? String,
                let email = result["email"] as? String {
-                DispatchQueue.main.async {
-                    self.userID = id
-                    self.userName = name
-                    self.userEmail = email
-                    self.isLoggedIn = true
-                    print("User ID: \(id)")
-                    print("User Name: \(name)")
-                    print("User Email: \(email)")
+            
+                self.facebookLoginRepository.facebooklogin(social_id: social_id, email: email, full_name: fullname) { result in
+                    switch result {
+                    case .success(let response):
+                        DispatchQueue.main.async {
+                            self.isLoggedIn = true
+                            self.userEmail = email
+                        }
+                        print("Faceboook login success: \(response)")
+                    case .failure(let error):
+                        DispatchQueue.main.async {
+                            self.loginError = "Facebook login failed: \(error.localizedDescription)"
+                        }
+                        print("Facebook login failed: \(error)")
+                    }
                 }
+
             }
         }
     }
@@ -63,6 +78,7 @@ class FacebookLoginViewModel: ObservableObject {
             self.userID = nil
             self.userName = nil
             self.userEmail = nil
+            self.loginError = nil
         }
     }
 }

@@ -20,5 +20,18 @@
     <string>ff1cc6c5e4a51b59231db188ecb9e63b</string>
     <key>FacebookDisplayName</key>
     <string>aipainapp</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>0.0.0.0</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
 </dict>
 </plist>
