@@ -12,11 +12,11 @@ struct SearchBarComponent: View {
                         .cornerRadius(8)
 
                     TextField("Search countries", text: $searchText)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding(8)
-                        .background(Color.salmon)
+                        .background(Color.whiteCustom)
+                        .cornerRadius(6.0)
                 }
-                .padding()
+                .padding(32)
             }
             .frame(height: 70)
             .background(Color.salmon)
@@ -38,7 +38,6 @@ struct SearchBarComponent: View {
                     .background(Color.white.opacity(0.8))
                     .padding()
                 }
-                .background(Color.yellow.opacity(0.2)) // Background color for ScrollView
             }
         }
     }
